@@ -4,96 +4,94 @@
   <meta charset="utf-8">
   <title>Máquinas Herramientas – Ingeniería Industrial · Inicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Planificación teórica de Máquinas-Herramienta: objetivos, contenidos, cronograma, evaluaciones y bibliografía para Ing. Industrial – UNACH.">
+  <!-- RUTA RELATIVA (no /assets/...) -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="container inner">
-      <div class="brand">Máquinas-Herramienta · UNACH</div>
-      <nav class="nav">
-        <a href="index.html">Inicio</a>
-        <a href="temas/seguridad.html">Temario</a>
-        <a href="semanas/semana-01.html">Semanas</a>
-        <a href="evaluacion.html">Evaluación</a>
-        <a href="proyecto/integrador.html">Proyecto</a>
-        <span class="badge">2025-A</span>
-      </nav>
-    </div>
-  </header>
-  <div class="container" style="padding-top:16px">
-    <div class="layout">
-      <aside class="sidebar">
-        <strong>Guía rápida</strong>
+  <div id="header"></div>
+  <div class="layout">
+    <div id="sidebar"></div>
+    <main class="content">
+      <nav class="breadcrumbs">Inicio</nav>
+      
+      <header>
+        <h1>Máquinas Herramientas – Ingeniería Industrial</h1>
+        <p style="color:var(--muted);margin-top:.2rem;">
+          Universidad Nacional de Chimborazo (UNACH) · Prof. Ing. Darío Fernando Guamán Lozada, MSc
+        </p>
+      </header>
+
+      <section aria-labelledby="nav-rapida">
+        <h2 id="nav-rapida">Navegación rápida</h2>
+        <div class="cards">
+          <a class="card" href="semanas/semana-01.html">
+            <h3>Plan por semanas</h3>
+            <p>Temas, prácticas, autónomo y entregables (16 semanas).</p>
+          </a>
+          <a class="card" href="temas/seguridad.html">
+            <h3>Temas teóricos</h3>
+            <p>Seguridad, metrología, CAD/CAM, torno, fresadora, SMAW, CNC…</p>
+          </a>
+          <a class="card" href="evaluacion.html">
+            <h3>Evaluación</h3>
+            <p>4 pruebas (1.75 c/u), 4 informes (1.75 c/u), 2 autónomos (3 c/u).</p>
+          </a>
+          <a class="card" href="proyecto/integrador.html">
+            <h3>Proyecto integrador</h3>
+            <p>Bracket/soporte: torno + fresado/CNC + SMAW + inspección.</p>
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="sobre-el-curso">
+        <h2 id="sobre-el-curso">Sobre el curso</h2>
+        <p>
+          Este sitio centraliza la teoría esencial de Máquinas Herramientas y organiza las actividades de
+          taller en <strong>taladro de banco</strong>, <strong>torno</strong>, <strong>fresadora manual</strong>,
+          <strong>SMAW</strong> y <strong>centro CNC</strong>, con integración <strong>CAD→CAM→CNC</strong>.
+          Cada semana indica claramente las prácticas, el trabajo autónomo y los entregables.
+        </p>
+      </section>
+
+      <section aria-labelledby="proximas-fechas">
+        <h2 id="proximas-fechas">Próximas fechas</h2>
+        <table class="tabla">
+          <tr><th>Actividad</th><th>Descripción</th><th>Fecha sugerida</th></tr>
+          <tr><td>Evaluación 1</td><td>Seguridad, Metrología, Dibujo, CAD I–II</td><td>Viernes 19/09/2025</td></tr>
+          <tr><td>Informe de Lab 1</td><td>CAD (Sem 3–4) + Taladrado (Sem 5)</td><td>Viernes 26/09/2025</td></tr>
+          <tr><td>Evaluación 2</td><td>Arranque de viruta, Taladrado, Torno I–II, Fresadora</td><td>Viernes 17/10/2025</td></tr>
+          <tr><td>Compilado Autónomo 1</td><td>Semanas 1–8</td><td>Viernes 17/10/2025</td></tr>
+        </table>
+        <p style="color:var(--muted)">El calendario completo está en <a href="evaluacion.html">Evaluación</a>.</p>
+      </section>
+
+      <section aria-labelledby="como-usar">
+        <h2 id="como-usar">Cómo usar este sitio</h2>
+        <ol>
+          <li>Revisa cada <a href="semanas/semana-01.html">semana</a> antes de clase: práctica, autónomo y entregables.</li>
+          <li>Consulta los <a href="temas/seguridad.html">temas teóricos</a> que correspondan a la semana.</li>
+          <li>Prepara tus <em>hojas de proceso</em> (taladrado/torno/fresado) y <em>documentación CNC</em> (offsets, G-code) cuando aplique.</li>
+          <li>Entrega <strong>informes compilados</strong> según las fechas indicadas, para optimizar revisión y retroalimentación.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="recursos">
+        <h2 id="recursos">Recursos</h2>
         <ul>
-          <li><a href="temas/seguridad.html">Seguridad y EPP</a></li>
-          <li><a href="temas/metrologia.html">Metrología</a></li>
-          <li><a href="temas/torno.html">Torno</a></li>
-          <li><a href="temas/fresadora.html">Fresadora</a></li>
-          <li><a href="temas/cnc.html">CNC</a></li>
+          <li><a href="temas/cnc-fundamentos.html">CNC: Fundamentos y seguridad</a></li>
+          <li><a href="temas/cnc-gcode-ciclos.html">CNC: G-code y ciclos de taladrado</a></li>
+          <li><a href="temas/cad-cam-25d.html">CAD/CAM 2.5D y post-procesado</a></li>
+          <li><a href="temas/calidad-metrologia.html">Plan de inspección y GD&T</a></li>
         </ul>
-        <hr>
-        <div class="callout">Revisa cada semana el plan de actividades y entregables.</div>
-      </aside>
-      <main class="content">
-        <nav class="breadcrumbs">Inicio</nav>
-        <header>
-          <h1>Máquinas Herramientas – Ingeniería Industrial</h1>
-          <p style="color:var(--muted);margin-top:.2rem;">
-            Universidad Nacional de Chimborazo (UNACH) · Prof. Ing. Darío Fernando Guamán Lozada, MSc
-          </p>
-        </header>
-        <section aria-labelledby="ficha">
-          <h2 id="ficha">Ficha de la asignatura</h2>
-          <table class="tabla">
-            <tr><th style="width:28%">Código</th><td>IIP331334</td></tr>
-            <tr><th>Nombre</th><td>Máquinas y Herramientas</td></tr>
-            <tr><th>Semestre</th><td>Tercer semestre</td></tr>
-            <tr><th>Unidad de organización curricular</th><td>Unidad Básica</td></tr>
-            <tr><th>Campo de formación</th><td>Praxis Preprofesional</td></tr>
-            <tr><th>Número de semanas efectivas</th><td>16</td></tr>
-            <tr><th>Horas por semana</th><td>ACD: <strong>3,00</strong> · APEX: <strong>3,00</strong> · AA: <strong>3,00</strong></td></tr>
-            <tr><th>Total de horas por semana</th><td><strong>9,00</strong></td></tr>
-            <tr><th>Total de horas por período</th><td><strong>144,00</strong></td></tr>
-            <tr><th>Prerrequisito</th><td>Electricidad Industrial (IIB220223)</td></tr>
-            <tr><th>Correquisito</th><td>—</td></tr>
-          </table>
-        </section>
-        <section aria-labelledby="descripcion">
-          <h2 id="descripcion">Descripción e intención formativa</h2>
-          <p>
-            Fundamentos de manufactura con/sin arranque de viruta (taladrado, torneado, fresado, rectificado
-            y conformado), metrología dimensional y seguridad industrial. Se articula con práctica de taller
-            en taladro de banco, torno, fresadora manual, SMAW y centro de mecanizado CNC, integrando
-            el flujo CAD→CAM→CNC. Desarrolla destrezas técnicas y de gestión para operar equipos,
-            controlar calidad y documentar procesos (hojas de proceso, WPS, planes de inspección).
-          </p>
-        </section>
-        <section aria-labelledby="plan">
-          <h2 id="plan">Plan del curso</h2>
-          <div class="cards">
-            <a class="card" href="semanas/semana-01.html">
-              <h3>Plan por semanas (16)</h3>
-              <p>Temas, prácticas de taller, autónomo y entregables.</p>
-            </a>
-            <a class="card" href="temas/seguridad.html">
-              <h3>Temario teórico</h3>
-              <p>Seguridad, metrología, torno, fresadora, SMAW, CNC.</p>
-            </a>
-            <a class="card" href="evaluacion.html">
-              <h3>Evaluación</h3>
-              <p>4 pruebas, 4 informes compilados, 2 compilados de autónomo.</p>
-            </a>
-            <a class="card" href="proyecto/integrador.html">
-              <h3>Proyecto integrador</h3>
-              <p>Pieza torneada + placa fresada/CNC + unión SMAW + inspección.</p>
-            </a>
-          </div>
-        </section>
-      </main>
-    </div>
+      </section>
+
+      <!-- EDITAR: Si quieres, añade aquí un breve aviso (p.ej., cambio de aula o recordatorio de EPP). -->
+
+    </main>
   </div>
-  <footer class="footer"><div class="container inner"><small>© 2025 · Ing. Darío Fernando Guamán Lozada, MSc · UNACH</small><small class="badge">GitHub Pages</small></div></footer>
+  <div id="footer"></div>
+  <!-- RUTAS RELATIVAS PARA JS -->
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/search.js"></script>
 </body>
 </html>
